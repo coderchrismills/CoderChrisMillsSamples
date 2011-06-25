@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1864" systemVersion="10K540" targetRuntime="iOS.CocoaTouch" nextObjectID="25" propertyAccessControl="none" initialViewController="2">
+    <dependencies>
+        <development defaultVersion="4200" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="865"/>
+    </dependencies>
+    <scenes>
+        <scene sceneID="5">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstRespodner"/>
+                <viewController id="2" customClass="PrintTestViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" id="6">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2" id="17"/>
+                                </connections>
+                            </webView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackOpaque" id="18">
+                                <rect key="frame" x="0.0" y="416" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="20"/>
+                                    <barButtonItem title="Email" id="19">
+                                        <connections>
+                                            <action selector="emailPressed:" destination="2" id="23"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Preview" id="22">
+                                        <connections>
+                                            <action selector="previewPressed:" destination="2" id="24"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="21"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedMetricsInferredSentinel key="simulatedStatusBarMetrics"/>
+                    <simulatedMetricsInferredSentinel key="simulatedTopBarMetrics"/>
+                    <simulatedMetricsInferredSentinel key="simulatedBottomBarMetrics"/>
+                    <simulatedMetricsInferredSentinel key="simulatedOrientationMetrics"/>
+                    <simulatedMetricsInferredSentinel key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="printContentWebView" destination="6" id="9"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-91" y="68"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="PrintTestViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PrintTestViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="emailPressed:"/>
+                <relationship kind="action" name="previewPressed:"/>
+                <relationship kind="outlet" name="printContentWebView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+    </classes>
+</document>
