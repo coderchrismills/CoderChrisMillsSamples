@@ -116,6 +116,11 @@
 	int i = 0;
 	for ( ; i < pages; i++) 
 	{
+		if (maxHeight * (i+1) > height) { // Check to see if page draws more than the height of the UIWebView
+            CGRect f = [webView frame];
+            f.size.height -= (((i+1) * maxHeight) - height);
+            [webView setFrame: f];
+        }
 		// Specify the size of the pdf page
 		UIGraphicsBeginPDFPageWithInfo(CGRectMake(0, 0, kDefaultPageWidth, kDefaultPageHeight), nil);
         CGContextRef currentContext = UIGraphicsGetCurrentContext();
