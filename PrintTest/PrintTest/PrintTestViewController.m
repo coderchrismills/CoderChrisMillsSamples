@@ -29,6 +29,11 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 	
+	/*
+	 // Easy to load our own html, rather than loading an external page.
+	 NSString *html = @"<html><body>foo</body></html>";
+	 [printContentWebView loadHTMLString:html baseURL:nil];
+	 */
 	[printContentWebView setDelegate:self];
 	NSURL *url = [NSURL URLWithString:@"http://happymaau.com/2011/05/17/weekly-update-2/"];
 	NSURLRequest *request = [NSURLRequest requestWithURL:url];
@@ -97,8 +102,6 @@
 	CGFloat maxWidth	= kDefaultPageWidth - 2*kMargin;
 	int pages = ceil(height / maxHeight);
 	
-	// Turn off so we can muck w/ the frame size w/o having it scale on us. 
-	[webView setScalesPageToFit:NO];
 	[webView setFrame:CGRectMake(0.f, 0.f, maxWidth, maxHeight)];
 	
 	// Normally we'd want a temp directory and a unique file name, but I want to see the final pdf from Simulator
