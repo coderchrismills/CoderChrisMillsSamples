@@ -1,0 +1,291 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F076FA813C9638F0034F8C8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F076FA713C9638F0034F8C8 /* UIKit.framework */; };
+		0F076FAA13C9638F0034F8C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F076FA913C9638F0034F8C8 /* Foundation.framework */; };
+		0F076FAC13C9638F0034F8C8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F076FAB13C9638F0034F8C8 /* CoreGraphics.framework */; };
+		0F076FB213C9638F0034F8C8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0F076FB013C9638F0034F8C8 /* InfoPlist.strings */; };
+		0F076FB413C9638F0034F8C8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F076FB313C9638F0034F8C8 /* main.m */; };
+		0F076FB813C9638F0034F8C8 /* RoundedShadowDemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F076FB713C9638F0034F8C8 /* RoundedShadowDemoAppDelegate.m */; };
+		0F076FBA13C9638F0034F8C8 /* RoundedShadowDemoViewController.h in Resources */ = {isa = PBXBuildFile; fileRef = 0F076FB913C9638F0034F8C8 /* RoundedShadowDemoViewController.h */; };
+		0F076FBC13C9638F0034F8C8 /* RoundedShadowDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F076FBB13C9638F0034F8C8 /* RoundedShadowDemoViewController.m */; };
+		0F076FBF13C9638F0034F8C8 /* RoundedShadowDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F076FBD13C9638F0034F8C8 /* RoundedShadowDemoViewController.xib */; };
+		0F076FC913C967560034F8C8 /* AppleLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F076FC613C967560034F8C8 /* AppleLogo.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0F076FA313C9638F0034F8C8 /* RoundedShadowDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoundedShadowDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F076FA713C9638F0034F8C8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0F076FA913C9638F0034F8C8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0F076FAB13C9638F0034F8C8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0F076FAF13C9638F0034F8C8 /* RoundedShadowDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RoundedShadowDemo-Info.plist"; sourceTree = "<group>"; };
+		0F076FB113C9638F0034F8C8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0F076FB313C9638F0034F8C8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0F076FB513C9638F0034F8C8 /* RoundedShadowDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RoundedShadowDemo-Prefix.pch"; sourceTree = "<group>"; };
+		0F076FB613C9638F0034F8C8 /* RoundedShadowDemoAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RoundedShadowDemoAppDelegate.h; sourceTree = "<group>"; };
+		0F076FB713C9638F0034F8C8 /* RoundedShadowDemoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoundedShadowDemoAppDelegate.m; sourceTree = "<group>"; };
+		0F076FB913C9638F0034F8C8 /* RoundedShadowDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RoundedShadowDemoViewController.h; sourceTree = "<group>"; };
+		0F076FBB13C9638F0034F8C8 /* RoundedShadowDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoundedShadowDemoViewController.m; sourceTree = "<group>"; };
+		0F076FBE13C9638F0034F8C8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RoundedShadowDemoViewController.xib; sourceTree = "<group>"; };
+		0F076FC613C967560034F8C8 /* AppleLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AppleLogo.png; path = Resources/AppleLogo.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0F076FA013C9638F0034F8C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F076FA813C9638F0034F8C8 /* UIKit.framework in Frameworks */,
+				0F076FAA13C9638F0034F8C8 /* Foundation.framework in Frameworks */,
+				0F076FAC13C9638F0034F8C8 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F076F9813C9638F0034F8C8 = {
+			isa = PBXGroup;
+			children = (
+				0F076FAD13C9638F0034F8C8 /* RoundedShadowDemo */,
+				0F076FA613C9638F0034F8C8 /* Frameworks */,
+				0F076FA413C9638F0034F8C8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0F076FA413C9638F0034F8C8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0F076FA313C9638F0034F8C8 /* RoundedShadowDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0F076FA613C9638F0034F8C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F076FA713C9638F0034F8C8 /* UIKit.framework */,
+				0F076FA913C9638F0034F8C8 /* Foundation.framework */,
+				0F076FAB13C9638F0034F8C8 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0F076FAD13C9638F0034F8C8 /* RoundedShadowDemo */ = {
+			isa = PBXGroup;
+			children = (
+				0F076FB613C9638F0034F8C8 /* RoundedShadowDemoAppDelegate.h */,
+				0F076FB713C9638F0034F8C8 /* RoundedShadowDemoAppDelegate.m */,
+				0F076FB913C9638F0034F8C8 /* RoundedShadowDemoViewController.h */,
+				0F076FBB13C9638F0034F8C8 /* RoundedShadowDemoViewController.m */,
+				0F076FBD13C9638F0034F8C8 /* RoundedShadowDemoViewController.xib */,
+				0F076FC513C967460034F8C8 /* Resources */,
+				0F076FAE13C9638F0034F8C8 /* Supporting Files */,
+			);
+			path = RoundedShadowDemo;
+			sourceTree = "<group>";
+		};
+		0F076FAE13C9638F0034F8C8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0F076FAF13C9638F0034F8C8 /* RoundedShadowDemo-Info.plist */,
+				0F076FB013C9638F0034F8C8 /* InfoPlist.strings */,
+				0F076FB313C9638F0034F8C8 /* main.m */,
+				0F076FB513C9638F0034F8C8 /* RoundedShadowDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0F076FC513C967460034F8C8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0F076FC613C967560034F8C8 /* AppleLogo.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0F076FA213C9638F0034F8C8 /* RoundedShadowDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F076FC213C9638F0034F8C8 /* Build configuration list for PBXNativeTarget "RoundedShadowDemo" */;
+			buildPhases = (
+				0F076F9F13C9638F0034F8C8 /* Sources */,
+				0F076FA013C9638F0034F8C8 /* Frameworks */,
+				0F076FA113C9638F0034F8C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RoundedShadowDemo;
+			productName = RoundedShadowDemo;
+			productReference = 0F076FA313C9638F0034F8C8 /* RoundedShadowDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0F076F9A13C9638F0034F8C8 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 0F076F9D13C9638F0034F8C8 /* Build configuration list for PBXProject "RoundedShadowDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0F076F9813C9638F0034F8C8;
+			productRefGroup = 0F076FA413C9638F0034F8C8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0F076FA213C9638F0034F8C8 /* RoundedShadowDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0F076FA113C9638F0034F8C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F076FB213C9638F0034F8C8 /* InfoPlist.strings in Resources */,
+				0F076FBA13C9638F0034F8C8 /* RoundedShadowDemoViewController.h in Resources */,
+				0F076FBF13C9638F0034F8C8 /* RoundedShadowDemoViewController.xib in Resources */,
+				0F076FC913C967560034F8C8 /* AppleLogo.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0F076F9F13C9638F0034F8C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F076FB413C9638F0034F8C8 /* main.m in Sources */,
+				0F076FB813C9638F0034F8C8 /* RoundedShadowDemoAppDelegate.m in Sources */,
+				0F076FBC13C9638F0034F8C8 /* RoundedShadowDemoViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0F076FB013C9638F0034F8C8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0F076FB113C9638F0034F8C8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0F076FBD13C9638F0034F8C8 /* RoundedShadowDemoViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0F076FBE13C9638F0034F8C8 /* en */,
+			);
+			name = RoundedShadowDemoViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0F076FC013C9638F0034F8C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0F076FC113C9638F0034F8C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0F076FC313C9638F0034F8C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RoundedShadowDemo/RoundedShadowDemo-Prefix.pch";
+				INFOPLIST_FILE = "RoundedShadowDemo/RoundedShadowDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0F076FC413C9638F0034F8C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RoundedShadowDemo/RoundedShadowDemo-Prefix.pch";
+				INFOPLIST_FILE = "RoundedShadowDemo/RoundedShadowDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0F076F9D13C9638F0034F8C8 /* Build configuration list for PBXProject "RoundedShadowDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F076FC013C9638F0034F8C8 /* Debug */,
+				0F076FC113C9638F0034F8C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0F076FC213C9638F0034F8C8 /* Build configuration list for PBXNativeTarget "RoundedShadowDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F076FC313C9638F0034F8C8 /* Debug */,
+				0F076FC413C9638F0034F8C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0F076F9A13C9638F0034F8C8 /* Project object */;
+}
