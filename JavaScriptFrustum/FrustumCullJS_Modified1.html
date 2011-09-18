@@ -31,7 +31,7 @@
 							for (var k = 0; k < 6; k++) {
 								if(check) {
 									var d = (frustum[k])[0] * (spheres[i])[0] + (frustum[k])[1] * (spheres[i])[1] + (frustum[k])[2] * (spheres[i])[2] + (frustum[k])[3] + (spheres[i])[3];
-									if(d < 0.0) {
+									if(d > 0.0) {
 										numVis++;
 										check = false;
 									}
