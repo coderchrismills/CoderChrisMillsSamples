@@ -21,10 +21,10 @@
 					for (var k = 0; k < 6; k++) {
 						var d = (frustum[k])[0] * pt[0] + (frustum[k])[1] * pt[1] + (frustum[k])[2] * pt[2] + (frustum[k])[3] + pt[3];
 						if(d < 0.0) {
-							return true;
+							return false;
 						}
 					}
-					return false;
+					return true;
 				}
 				
 				document.getElementById("output").innerHTML = "";
