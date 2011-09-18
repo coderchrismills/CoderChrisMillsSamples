@@ -1,0 +1,58 @@
+<html>
+	<head>
+		<script type="text/javascript">
+			function frustumCheck() {
+				var arraysize = 16384;
+				var spheres = new Array(arraysize);
+				for (var i=0; i<spheres.length; i++) {
+					spheres[i] = new Float32Array([Math.random() * 2, Math.random() * 2, Math.random() * 2, 1]);
+				}
+				
+				var frustum = [
+					new Float32Array([+1, 0, 0, 2]),
+					new Float32Array([-1, 0, 0, 2]),
+					new Float32Array([0, +1, 0, 2]),
+					new Float32Array([0, -1, 0, 2]),
+					new Float32Array([0, 0, +1, 2]),
+					new Float32Array([0, 0, -1, 2])
+				];
+			
+				document.getElementById("output").innerHTML = "";
+				var output = "";
+				for(var count = 0; count < 20; count++)
+				{
+					var start = Date.now();
+					var numVis = 0;
+		
+					for (var j=0; j<100; j++) {
+						numVis = 0;
+						for (var i=0; i < arraysize; i++) {
+							var check = true;
+							for (var k = 0; k < 6; k++) {
+								if(check) {
+									var d = (frustum[k])[0] * (spheres[i])[0] + (frustum[k])[1] * (spheres[i])[1] + (frustum[k])[2] * (spheres[i])[2] + (frustum[k])[3] + (spheres[i])[3];
+									if(d < 0.0) {
+										numVis++;
+										check = false;
+									}
+								}
+							}
+						}
+					}	
+
+					var end = Date.now();
+					output += ("Run " + count + " Timing: \n" + (end - start) + " ms\n<br />");
+				}
+				document.getElementById("output").innerHTML = output;
+			}
+		</script>
+	</head>
+<body>
+	<form>
+		<p>
+			<input type="button" value="Run" id="runButton" onclick="frustumCheck();">
+		</p>
+	</form>
+	<div id="output"></div>
+</body>
+</html>
