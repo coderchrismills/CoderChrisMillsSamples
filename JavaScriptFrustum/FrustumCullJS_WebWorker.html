@@ -1,0 +1,18 @@
+<html>
+	<head>
+		<script type="text/javascript">
+			var worker = new Worker('frustumWorker.js');
+			worker.onmessage = function(event) {
+				
+			}
+		</script>
+	</head>
+<body>
+	<form>
+		<p>
+			<input type="button" value="Run" id="runButton" onclick="frustumCheck();">
+		</p>
+	</form>
+	<div id="output"></div>
+</body>
+</html>

@@ -2,7 +2,7 @@
 	<head>
 		<script type="text/javascript">
 			function frustumCheck() {
-				var arraysize = 16384;
+				var arraysize = 262144;
 				var spheres = new Array(arraysize);
 				for (var i=0; i<spheres.length; i++) {
 					spheres[i] = new Float32Array([Math.random() * 2, Math.random() * 2, Math.random() * 2, 1]);
@@ -24,7 +24,7 @@
 					var start = Date.now();
 					var numVis = 0;
 		
-					for (var j=0; j<100; j++) {
+					for (var j=0; j<25; j++) {
 						numVis = 0;
 						for (var i=0; i < arraysize; i++) {
 							var check = true;
