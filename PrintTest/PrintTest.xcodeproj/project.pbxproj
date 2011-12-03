@@ -13,11 +13,11 @@
 		0F1BCFA013B5BA5200996A5D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0F1BCF9E13B5BA5200996A5D /* InfoPlist.strings */; };
 		0F1BCFA213B5BA5200996A5D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F1BCFA113B5BA5200996A5D /* main.m */; };
 		0F1BCFA613B5BA5200996A5D /* PrintTestAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F1BCFA513B5BA5200996A5D /* PrintTestAppDelegate.m */; };
-		0F1BCFA913B5BA5200996A5D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F1BCFA713B5BA5200996A5D /* MainStoryboard.storyboard */; };
 		0F1BCFAB13B5BA5200996A5D /* PrintTestViewController.h in Resources */ = {isa = PBXBuildFile; fileRef = 0F1BCFAA13B5BA5200996A5D /* PrintTestViewController.h */; };
 		0F1BCFAD13B5BA5200996A5D /* PrintTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F1BCFAC13B5BA5200996A5D /* PrintTestViewController.m */; };
 		0F1BCFBD13B5CFE100996A5D /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F1BCFBB13B5CFE100996A5D /* MessageUI.framework */; };
 		0F1BCFBE13B5CFE100996A5D /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F1BCFBC13B5CFE100996A5D /* QuickLook.framework */; };
+		0F5E8C581489CE2D00B9ACAB /* PrintTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F5E8C571489CE2D00B9ACAB /* PrintTestViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,11 +31,11 @@
 		0F1BCFA313B5BA5200996A5D /* PrintTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PrintTest-Prefix.pch"; sourceTree = "<group>"; };
 		0F1BCFA413B5BA5200996A5D /* PrintTestAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrintTestAppDelegate.h; sourceTree = "<group>"; };
 		0F1BCFA513B5BA5200996A5D /* PrintTestAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrintTestAppDelegate.m; sourceTree = "<group>"; };
-		0F1BCFA813B5BA5200996A5D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		0F1BCFAA13B5BA5200996A5D /* PrintTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrintTestViewController.h; sourceTree = "<group>"; };
 		0F1BCFAC13B5BA5200996A5D /* PrintTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrintTestViewController.m; sourceTree = "<group>"; };
 		0F1BCFBB13B5CFE100996A5D /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		0F1BCFBC13B5CFE100996A5D /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
+		0F5E8C571489CE2D00B9ACAB /* PrintTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PrintTestViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,9 +88,9 @@
 			children = (
 				0F1BCFA413B5BA5200996A5D /* PrintTestAppDelegate.h */,
 				0F1BCFA513B5BA5200996A5D /* PrintTestAppDelegate.m */,
-				0F1BCFA713B5BA5200996A5D /* MainStoryboard.storyboard */,
 				0F1BCFAA13B5BA5200996A5D /* PrintTestViewController.h */,
 				0F1BCFAC13B5BA5200996A5D /* PrintTestViewController.m */,
+				0F5E8C571489CE2D00B9ACAB /* PrintTestViewController.xib */,
 				0F1BCF9C13B5BA5200996A5D /* Supporting Files */,
 			);
 			path = PrintTest;
@@ -132,6 +132,9 @@
 /* Begin PBXProject section */
 		0F1BCF8813B5BA5200996A5D /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
 			buildConfigurationList = 0F1BCF8B13B5BA5200996A5D /* Build configuration list for PBXProject "PrintTest" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -155,8 +158,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F1BCFA013B5BA5200996A5D /* InfoPlist.strings in Resources */,
-				0F1BCFA913B5BA5200996A5D /* MainStoryboard.storyboard in Resources */,
 				0F1BCFAB13B5BA5200996A5D /* PrintTestViewController.h in Resources */,
+				0F5E8C581489CE2D00B9ACAB /* PrintTestViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,14 +185,6 @@
 				0F1BCF9F13B5BA5200996A5D /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		0F1BCFA713B5BA5200996A5D /* MainStoryboard.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0F1BCFA813B5BA5200996A5D /* en */,
-			);
-			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

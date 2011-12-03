@@ -6,14 +6,20 @@
 //
 /****************************************************************************/
 #import "PrintTestAppDelegate.h"
+#import "PrintTestViewController.h"
 /****************************************************************************/
 @implementation PrintTestAppDelegate
 /****************************************************************************/
 @synthesize window = _window;
+@synthesize viewController = _viewController;
 /****************************************************************************/
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+	self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    // Override point for customization after application launch.
+	self.viewController = [[PrintTestViewController alloc] initWithNibName:@"PrintTestViewController" bundle:nil];
+	self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;
 }

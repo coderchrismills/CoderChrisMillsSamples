@@ -7,8 +7,11 @@
 /****************************************************************************/
 #import <UIKit/UIKit.h>
 /****************************************************************************/
+@class PrintTestViewController;
+/****************************************************************************/
 @interface PrintTestAppDelegate : UIResponder <UIApplicationDelegate>
 /****************************************************************************/
 @property (nonatomic, retain) UIWindow *window;
+@property (strong, nonatomic) PrintTestViewController *viewController;
 /****************************************************************************/
 @end
