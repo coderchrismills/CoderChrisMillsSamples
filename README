@@ -2,3 +2,5 @@ Sample programming projects, mainly focusing on iOS development.
 
 Print Test (iOS) : How to print a UIWebView
 RoundedShadowDemo (iOS) : How to apply a drop shadow and rounded corners to a UIView
+JavaScriptFrustum (JS) : Browser speed test with WebWorkers using Frustum checking as a base comparison
+MusicApp (iOS) : Small app to demo opening and playing user music as well as using the vDSP library. 
