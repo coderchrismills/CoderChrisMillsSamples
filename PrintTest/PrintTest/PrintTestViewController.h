@@ -20,6 +20,7 @@
 @property (nonatomic, retain) IBOutlet UIWebView *printContentWebView;
 @property (nonatomic, retain) NSString *pdfPath;
 /****************************************************************************/
+- (void)drawPageNumber:(NSInteger)pageNum;
 - (IBAction)previewPressed:(id)sender;
 - (IBAction)emailPressed:(id)sender;
 	

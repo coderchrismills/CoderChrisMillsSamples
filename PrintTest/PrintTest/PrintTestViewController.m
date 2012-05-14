@@ -35,7 +35,7 @@
 	 [printContentWebView loadHTMLString:html baseURL:nil];
 	 */
 	[printContentWebView setDelegate:self];
-	NSURL *url = [NSURL URLWithString:@"http://happymaau.com/2011/05/17/weekly-update-2/"];
+	NSURL *url = [NSURL URLWithString:@"http://happymaau.com/2012/01/27/the-2011-best-app-ever-results/"];
 	NSURLRequest *request = [NSURLRequest requestWithURL:url];
 	[printContentWebView loadRequest:request];
 	
@@ -124,6 +124,7 @@
 		// Specify the size of the pdf page
 		UIGraphicsBeginPDFPageWithInfo(CGRectMake(0, 0, kDefaultPageWidth, kDefaultPageHeight), nil);
         CGContextRef currentContext = UIGraphicsGetCurrentContext();
+		[self drawPageNumber:(i+1)];
 		// Move the context for the margins
         CGContextTranslateCTM(currentContext, kMargin, kMargin);
 		// offset the webview content so we're drawing the part of the webview for the current page
@@ -136,6 +137,23 @@
 	// Restore the webview and move it to the top. 
 	[webView setFrame:origframe];
 	[[[webView subviews] lastObject] setContentOffset:CGPointMake(0, 0) animated:NO];
+}
+/****************************************************************************/
+- (void)drawPageNumber:(NSInteger)pageNum
+{
+	NSString* pageString = [NSString stringWithFormat:@"Page %d", pageNum];
+	UIFont* theFont = [UIFont systemFontOfSize:12];
+	CGSize maxSize = CGSizeMake(612, 72);
+	
+	CGSize pageStringSize = [pageString sizeWithFont:theFont
+								   constrainedToSize:maxSize
+                                       lineBreakMode:UILineBreakModeClip];
+	CGRect stringRect = CGRectMake(((612.0 - pageStringSize.width) / 2.0),
+								   720.0 + ((72.0 - pageStringSize.height) / 2.0) ,
+								   pageStringSize.width,
+								   pageStringSize.height);
+	
+	[pageString drawInRect:stringRect withFont:theFont];
 }
 /****************************************************************************/
 // From Print WebView Example
