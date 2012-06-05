@@ -6,6 +6,7 @@
 //
 /****************************************************************************/
 #import "PrintTestViewController.h"
+#import <QuartzCore/QuartzCore.h>
 /****************************************************************************/
 #define kDefaultPageHeight 792
 #define kDefaultPageWidth  612

@@ -17,6 +17,7 @@
 		0F1BCFAD13B5BA5200996A5D /* PrintTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F1BCFAC13B5BA5200996A5D /* PrintTestViewController.m */; };
 		0F1BCFBD13B5CFE100996A5D /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F1BCFBB13B5CFE100996A5D /* MessageUI.framework */; };
 		0F1BCFBE13B5CFE100996A5D /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F1BCFBC13B5CFE100996A5D /* QuickLook.framework */; };
+		0F56C4CD157DC075006CAAC2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F56C4CC157DC075006CAAC2 /* QuartzCore.framework */; };
 		0F5E8C581489CE2D00B9ACAB /* PrintTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F5E8C571489CE2D00B9ACAB /* PrintTestViewController.xib */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		0F1BCFAC13B5BA5200996A5D /* PrintTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrintTestViewController.m; sourceTree = "<group>"; };
 		0F1BCFBB13B5CFE100996A5D /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		0F1BCFBC13B5CFE100996A5D /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
+		0F56C4CC157DC075006CAAC2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		0F5E8C571489CE2D00B9ACAB /* PrintTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PrintTestViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -43,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F56C4CD157DC075006CAAC2 /* QuartzCore.framework in Frameworks */,
 				0F1BCFBD13B5CFE100996A5D /* MessageUI.framework in Frameworks */,
 				0F1BCFBE13B5CFE100996A5D /* QuickLook.framework in Frameworks */,
 				0F1BCF9613B5BA5200996A5D /* UIKit.framework in Frameworks */,
@@ -74,6 +77,7 @@
 		0F1BCF9413B5BA5200996A5D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0F56C4CC157DC075006CAAC2 /* QuartzCore.framework */,
 				0F1BCFBB13B5CFE100996A5D /* MessageUI.framework */,
 				0F1BCFBC13B5CFE100996A5D /* QuickLook.framework */,
 				0F1BCF9513B5BA5200996A5D /* UIKit.framework */,
