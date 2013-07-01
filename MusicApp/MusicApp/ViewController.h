@@ -76,10 +76,6 @@ static inline float energyToDb(float energy)
 	IBOutlet UILabel *intensityLabel;
 	IBOutlet UILabel *powerLabel;
 	
-	UIImage	*beatMarkerOn;
-	UIImage *beatMarkerOff;
-	UIImage *fullWaveformImage;
-	
 	int		nCurrentImageViewTypePortrait;
 	BOOL	bCurrentImageViewTypeLandscapeFull;
 	
@@ -90,7 +86,6 @@ static inline float energyToDb(float energy)
 	unsigned long			songLength;
 	NSInteger				nLastPlayIndex;
 	float					songSampleRate;
-	NSTimer					*analysisTimer;
 	int						numChannels;
 	
 	// Beat information
@@ -103,7 +98,6 @@ static inline float energyToDb(float energy)
 	float fMaxSpecRate;
 	
 	// FFT Stuff
-	NSData						*songData;
 	SInt16						*songWaveform;
 	FFTSetupD					fft_weights;
 	DSPDoubleSplitComplex		input;
@@ -113,7 +107,12 @@ static inline float energyToDb(float energy)
 	
 }
 /****************************************************************************/
-@property (nonatomic, retain) MPMusicPlayerController	*musicPlayer;
+@property (nonatomic, strong) MPMusicPlayerController	*musicPlayer;
+@property (nonatomic, strong) NSData                    *songData;
+@property (nonatomic, strong) NSTimer					*analysisTimer;
+@property (nonatomic, strong) UIImage                   *beatMarkerOn;
+@property (nonatomic, strong) UIImage                   *beatMarkerOff;
+@property (nonatomic, strong) UIImage                   *fullWaveformImage;
 /****************************************************************************/
 - (IBAction)volumeChanged:(id)sender;
 - (IBAction)showMediaPicker:(id)sender;

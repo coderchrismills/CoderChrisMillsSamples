@@ -37,10 +37,10 @@
 	bCurrentImageViewTypeLandscapeFull	= YES;
 	
 	nLastPlayIndex		= 0;	// Index into the song we left off on. 
-	analysisTimer		= nil;	// Timer for calling our analysis function.
+	self.analysisTimer	= nil;	// Timer for calling our analysis function.
 
-	beatMarkerOn		= [UIImage imageNamed:@"icon_beatmarker_on.png"];
-	beatMarkerOff		= [UIImage imageNamed:@"icon_beatmarker_off.png"];
+	[self setBeatMarkerOn:[UIImage imageNamed:@"icon_beatmarker_on.png"]];
+	[self setBeatMarkerOff:[UIImage imageNamed:@"icon_beatmarker_off.png"]];
 	
 	// Setup weights (twiddle factors)
     fft_weights 		= vDSP_create_fftsetupD(6, kFFTRadix2);
@@ -76,13 +76,17 @@
 	[musicPlayer endGeneratingPlaybackNotifications];
 	musicPlayer = nil;
 	
-	[analysisTimer invalidate];
-	analysisTimer = nil;
+	[[self analysisTimer] invalidate];
+    [self setAnalysisTimer:nil];
 	
 	free(fftWaveform);
 	free(fftEnergy);
 	free(fftData);
-	
+	free(input.realp);
+    free(input.imagp);
+    
+    vDSP_destroy_fftsetupD(fft_weights);
+    
     [super viewDidUnload];
 }
 /****************************************************************************/
@@ -273,12 +277,12 @@
 				[loadingView setHidden:YES];
 				
 				// Start the timer to sample our audio data. 
-				float interval_rate = ((songLength / songSampleRate) / MAX_FREQUENCY) / sizeof(SInt16);
-				analysisTimer = [NSTimer scheduledTimerWithTimeInterval:interval_rate
-																 target:self 
-															   selector:@selector(doAnalysis:) 
-															   userInfo:nil 
-																repeats:YES];
+				float interval_rate = ((songLength / songSampleRate) / MAX_FREQUENCY);
+				[self setAnalysisTimer:[NSTimer scheduledTimerWithTimeInterval:interval_rate
+                                                                        target:self
+                                                                      selector:@selector(doAnalysis:)
+                                                                      userInfo:nil
+                                                                       repeats:YES]];
 				[musicPlayer play];
 			}];
 		}];		
@@ -360,7 +364,7 @@
 		}
 	}
 
-	songData = nil;
+	[self setSongData:nil];
 
 	if (reader.status == AVAssetReaderStatusFailed || reader.status == AVAssetReaderStatusUnknown){
 		DebugLog(@"Something went wrong...");
@@ -368,7 +372,7 @@
 	}
 
 	if (reader.status == AVAssetReaderStatusCompleted){
-		songData = [NSData dataWithData:fullSongData];
+		[self setSongData:[NSData dataWithData:fullSongData]];
 	}
 	
 	fullSongData		= nil;
@@ -377,19 +381,19 @@
 	outputSettingsDict	= nil;
 
 	
-	songLength = [songData length];
-	songWaveform = (SInt16 *)songData.bytes;
+	songLength = [[self songData] length] / sizeof(SInt16);
+	songWaveform = (SInt16 *)[[self songData] bytes];
 	
 	DebugLog(@"Data length %lu", songLength);
 	
 	
-	UIImage *waveimage = [self audioImageGraphFromRawData:songWaveform withSampleSize:(songLength / sizeof(SInt16))];
+	UIImage *waveimage = [self audioImageGraphFromRawData:songWaveform withSampleSize:songLength];
 	if(waveimage != nil)
 	{
 		[fullWaveformImageViewLandscape setImage:waveimage];
 		[fullWaveformImageViewPortrait setImage:waveimage];
 	}
-	fullWaveformImage = waveimage;
+	[self setFullWaveformImage:waveimage];
 	
 	nLastPlayIndex		= 0;
 }
@@ -408,7 +412,7 @@
 	
 	UInt32 data_size = 4096;
 	
-	int nrange = MIN((nLastPlayIndex + data_size), songLength / sizeof(SInt16));
+	int nrange = MIN((nLastPlayIndex + data_size), songLength);
 	
 	SInt16 max_val = -INT16_MAX; // waveform must be between -1 and 1;
 	for (NSInteger i = nLastPlayIndex; i < nrange; i++)
@@ -525,11 +529,11 @@
 	
 	//DebugLog(@"Intensity: %f, %f, %d", (float)ave, (float)power, nLastBeatMask);
 	
-	[bassImageView setImage:(nLastBeatMask & dbf_Bass) ? beatMarkerOn : beatMarkerOff];
-	[violaImageView setImage:(nLastBeatMask & dbf_Viola) ? beatMarkerOn : beatMarkerOff];
-	[midcImageView setImage:(nLastBeatMask & dbf_Midc) ? beatMarkerOn : beatMarkerOff];
-	[humanHighImageView setImage:(nLastBeatMask & dbf_HumanHigh) ? beatMarkerOn : beatMarkerOff];
-	[highImageView setImage:(nLastBeatMask & dbf_HighNote) ? beatMarkerOn : beatMarkerOff];
+	[bassImageView setImage:(nLastBeatMask & dbf_Bass) ? [self beatMarkerOn] : [self beatMarkerOff]];
+	[violaImageView setImage:(nLastBeatMask & dbf_Viola) ? [self beatMarkerOn] : [self beatMarkerOff]];
+	[midcImageView setImage:(nLastBeatMask & dbf_Midc) ? [self beatMarkerOn] : [self beatMarkerOff]];
+	[humanHighImageView setImage:(nLastBeatMask & dbf_HumanHigh) ? [self beatMarkerOn] : [self beatMarkerOff]];
+	[highImageView setImage:(nLastBeatMask & dbf_HighNote) ? [self beatMarkerOn] : [self beatMarkerOff]];
 	
 	float intensity_out = (float)(ave);
 	intensityLabel.text = [NSString stringWithFormat:@"Intensity : %f", intensity_out];
