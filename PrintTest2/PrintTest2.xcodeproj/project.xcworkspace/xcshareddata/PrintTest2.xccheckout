@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>4B759F4A-4A40-40F8-ACBB-738A56F03EA3</string>
+	<key>IDESourceControlProjectName</key>
+	<string>PrintTest2</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>0AB6A575-A5E6-47AD-9DEF-DF5BB7423C20</key>
+		<string>https://github.com/brentnycum/BNHtmlPdfKit.git</string>
+		<key>3CC24B0E-DA35-4911-AA9F-CADE4A1E836C</key>
+		<string>https://github.com/coderchrismills/CoderChrisMillsSamples.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>PrintTest2/PrintTest2.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>0AB6A575-A5E6-47AD-9DEF-DF5BB7423C20</key>
+		<string>../../PrintTest2/Source/BNHtmlPdfKit</string>
+		<key>3CC24B0E-DA35-4911-AA9F-CADE4A1E836C</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/coderchrismills/CoderChrisMillsSamples.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>3CC24B0E-DA35-4911-AA9F-CADE4A1E836C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>0AB6A575-A5E6-47AD-9DEF-DF5BB7423C20</string>
+			<key>IDESourceControlWCCName</key>
+			<string>BNHtmlPdfKit</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>3CC24B0E-DA35-4911-AA9F-CADE4A1E836C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CoderChrisMillsSamples</string>
+		</dict>
+	</array>
+</dict>
+</plist>
