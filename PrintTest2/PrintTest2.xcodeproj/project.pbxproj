@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB609A2817C450D600108D1E /* PrintTest2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB609A2717C450D600108D1E /* PrintTest2.storyboard */; };
+		DB609A2A17C4523F00108D1E /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB609A2917C4523F00108D1E /* MessageUI.framework */; };
 		DB79083817C1C01E00B53014 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB79083717C1C01E00B53014 /* Foundation.framework */; };
 		DB79083A17C1C01E00B53014 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB79083917C1C01E00B53014 /* CoreGraphics.framework */; };
 		DB79083C17C1C01E00B53014 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB79083B17C1C01E00B53014 /* UIKit.framework */; };
 		DB79084217C1C01E00B53014 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DB79084017C1C01E00B53014 /* InfoPlist.strings */; };
 		DB79084417C1C01E00B53014 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DB79084317C1C01E00B53014 /* main.m */; };
 		DB79084817C1C01F00B53014 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DB79084717C1C01F00B53014 /* AppDelegate.m */; };
-		DB79084B17C1C01F00B53014 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB79084917C1C01F00B53014 /* Main.storyboard */; };
 		DB79084E17C1C01F00B53014 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB79084D17C1C01F00B53014 /* ViewController.m */; };
 		DB79085017C1C01F00B53014 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB79084F17C1C01F00B53014 /* Images.xcassets */; };
-		DB79085717C1C01F00B53014 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB79085617C1C01F00B53014 /* XCTest.framework */; };
 		DB79085817C1C01F00B53014 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB79083717C1C01E00B53014 /* Foundation.framework */; };
 		DB79085917C1C01F00B53014 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB79083B17C1C01E00B53014 /* UIKit.framework */; };
 		DB79086117C1C01F00B53014 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DB79085F17C1C01F00B53014 /* InfoPlist.strings */; };
@@ -36,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DB609A2717C450D600108D1E /* PrintTest2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PrintTest2.storyboard; sourceTree = "<group>"; };
+		DB609A2917C4523F00108D1E /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		DB79083417C1C01E00B53014 /* PrintTest2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrintTest2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB79083717C1C01E00B53014 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DB79083917C1C01E00B53014 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -46,12 +48,10 @@
 		DB79084517C1C01F00B53014 /* PrintTest2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PrintTest2-Prefix.pch"; sourceTree = "<group>"; };
 		DB79084617C1C01F00B53014 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DB79084717C1C01F00B53014 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DB79084A17C1C01F00B53014 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DB79084C17C1C01F00B53014 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		DB79084D17C1C01F00B53014 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		DB79084F17C1C01F00B53014 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DB79085517C1C01F00B53014 /* PrintTest2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrintTest2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DB79085617C1C01F00B53014 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		DB79085E17C1C01F00B53014 /* PrintTest2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PrintTest2Tests-Info.plist"; sourceTree = "<group>"; };
 		DB79086017C1C01F00B53014 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DB79086217C1C01F00B53014 /* PrintTest2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrintTest2Tests.m; sourceTree = "<group>"; };
@@ -66,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB609A2A17C4523F00108D1E /* MessageUI.framework in Frameworks */,
 				DB79083A17C1C01E00B53014 /* CoreGraphics.framework in Frameworks */,
 				DB79083C17C1C01E00B53014 /* UIKit.framework in Frameworks */,
 				DB79083817C1C01E00B53014 /* Foundation.framework in Frameworks */,
@@ -76,7 +77,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB79085717C1C01F00B53014 /* XCTest.framework in Frameworks */,
 				DB79085917C1C01F00B53014 /* UIKit.framework in Frameworks */,
 				DB79085817C1C01F00B53014 /* Foundation.framework in Frameworks */,
 			);
@@ -107,10 +107,10 @@
 		DB79083617C1C01E00B53014 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DB609A2917C4523F00108D1E /* MessageUI.framework */,
 				DB79083717C1C01E00B53014 /* Foundation.framework */,
 				DB79083917C1C01E00B53014 /* CoreGraphics.framework */,
 				DB79083B17C1C01E00B53014 /* UIKit.framework */,
-				DB79085617C1C01F00B53014 /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -121,13 +121,13 @@
 				DB79086C17C1C21F00B53014 /* BNHtmlPdf */,
 				DB79084617C1C01F00B53014 /* AppDelegate.h */,
 				DB79084717C1C01F00B53014 /* AppDelegate.m */,
-				DB79084917C1C01F00B53014 /* Main.storyboard */,
 				DB79084C17C1C01F00B53014 /* ViewController.h */,
 				DB79084D17C1C01F00B53014 /* ViewController.m */,
 				DB79087017C1C75A00B53014 /* WebPopOverViewController.h */,
 				DB79087117C1C75A00B53014 /* WebPopOverViewController.m */,
 				DB79084F17C1C01F00B53014 /* Images.xcassets */,
 				DB79083E17C1C01E00B53014 /* Supporting Files */,
+				DB609A2717C450D600108D1E /* PrintTest2.storyboard */,
 			);
 			path = PrintTest2;
 			sourceTree = "<group>";
@@ -251,7 +251,7 @@
 			files = (
 				DB79085017C1C01F00B53014 /* Images.xcassets in Resources */,
 				DB79084217C1C01E00B53014 /* InfoPlist.strings in Resources */,
-				DB79084B17C1C01F00B53014 /* Main.storyboard in Resources */,
+				DB609A2817C450D600108D1E /* PrintTest2.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,14 +305,6 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		DB79084917C1C01F00B53014 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DB79084A17C1C01F00B53014 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DB79085F17C1C01F00B53014 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -355,7 +347,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -386,7 +378,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -402,6 +394,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PrintTest2/PrintTest2-Prefix.pch";
 				INFOPLIST_FILE = "PrintTest2/PrintTest2-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -418,6 +411,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PrintTest2/PrintTest2-Prefix.pch";
 				INFOPLIST_FILE = "PrintTest2/PrintTest2-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -483,6 +477,7 @@
 				DB79086817C1C01F00B53014 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DB79086917C1C01F00B53014 /* Build configuration list for PBXNativeTarget "PrintTest2Tests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +486,7 @@
 				DB79086B17C1C01F00B53014 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
