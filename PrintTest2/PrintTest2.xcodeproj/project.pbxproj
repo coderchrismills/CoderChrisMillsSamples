@@ -55,8 +55,8 @@
 		DB79085E17C1C01F00B53014 /* PrintTest2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PrintTest2Tests-Info.plist"; sourceTree = "<group>"; };
 		DB79086017C1C01F00B53014 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DB79086217C1C01F00B53014 /* PrintTest2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrintTest2Tests.m; sourceTree = "<group>"; };
-		DB79086D17C1C24200B53014 /* BNHtmlPdfKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BNHtmlPdfKit.h; path = Source/BNHtmlPdfKit/BNHtmlPdfKit.h; sourceTree = "<group>"; };
-		DB79086E17C1C24200B53014 /* BNHtmlPdfKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BNHtmlPdfKit.m; path = Source/BNHtmlPdfKit/BNHtmlPdfKit.m; sourceTree = "<group>"; };
+		DB79086D17C1C24200B53014 /* BNHtmlPdfKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BNHtmlPdfKit.h; path = Source/BNHtmlPdfKit.h; sourceTree = "<group>"; };
+		DB79086E17C1C24200B53014 /* BNHtmlPdfKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BNHtmlPdfKit.m; path = Source/BNHtmlPdfKit.m; sourceTree = "<group>"; };
 		DB79087017C1C75A00B53014 /* WebPopOverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WebPopOverViewController.h; path = Source/WebPopOverViewController.h; sourceTree = "<group>"; };
 		DB79087117C1C75A00B53014 /* WebPopOverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WebPopOverViewController.m; path = Source/WebPopOverViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */

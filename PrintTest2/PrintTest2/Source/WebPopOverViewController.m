@@ -52,8 +52,7 @@
     
     // Generate the pdf. 
     [htmlPdfKit saveHtmlAsPdf:htmlString
-                       toFile:[self pdfFilePath]
-                       inView:v];
+                       toFile:[self pdfFilePath]];
 
 }
 /****************************************************************************/
